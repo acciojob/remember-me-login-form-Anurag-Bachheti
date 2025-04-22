@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<form>
-		<h1>Login Form</h1>
-		<label for="username">Username:</label>
-		<input type="text" placeholder="Username" id="username">
-		<br>
-		<label for="password">Password:</label>
-		<input type="password" placeholder="Password" id="password">
-		<br>
-		<label for="checkbox">Remember me:</label>
-		<input type="checkbox" id="checkbox">
-		<br>
-		<input type="submit" value="submit" id="submit">
-		<br>
-		<button style="display:none" id="existing">Login as existing user</button>
-	</form>
-	<script type="text/javascript" src="./script.js">
-</script>
+  <form>
+    <h1>Login Form</h1>
 
+    <label for="username">Username:</label>
+    <input type="text" placeholder="Username" id="username">
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="password" placeholder="Password" id="password">
+    <br>
+
+    <label for="checkbox">Remember me:</label>
+    <input type="checkbox" id="checkbox">
+    <br>
+
+    <!-- Cypress is looking for this exact element -->
+    <input type="submit" value="Submit" id="submit">
+    <br>
+
+    <button style="display:none" id="existing">Login as existing user</button>
+  </form>
+
+  <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
